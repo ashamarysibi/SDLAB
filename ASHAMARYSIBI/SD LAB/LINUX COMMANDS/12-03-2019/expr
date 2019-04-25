@@ -1,0 +1,139 @@
+student@T11:~$ expr 2+3
+2+3
+student@T11:~$ expr 2 + 3
+5
+student@T11:~$ expr 2 \* 3
+6
+student@T11:~$ expr 21 \ 3
+expr: syntax error
+student@T11:~$ expr 21 / 3
+7
+student@T11:~$ expr 21 - 3
+18
+student@T11:~$ y=10
+student@T11:~$ y=`expr $y + 1`
+student@T11:~$ echo $y
+11
+student@T11:~$ a=1
+student@T11:~$ echo $a
+1
+student@T11:~$ a=` expr $a + 2`
+student@T11:~$ echo $a
+3
+student@T11:~$ echo "enter two nos"
+enter two nos
+student@T11:~$ read a
+2
+student@T11:~$ read b
+4
+student@T11:~$ c= `expr a + b`
+expr: non-integer argument
+student@T11:~$ c= `expr $a + $b`
+6: command not found
+student@T11:~$ echo c
+c
+student@T11:~$ echo $c
+
+student@T11:~$ read a
+10
+student@T11:~$ read b
+20
+student@T11:~$ sum= `expr $a + $b`
+30: command not found
+student@T11:~$ sum=`expr $a + $b`
+student@T11:~$ echo $sum
+30
+student@T11:~$ echo "sum=$sum"
+sum=30
+student@T11:~$ a=10
+student@T11:~$ b=20
+student@T11:~$ res=`expr $a = $b` 
+student@T11:~$ echo $res
+0
+student@T11:~$ res=`expr $a \< $b`
+student@T11:~$ echo $res
+1
+student@T11:~$ res=`expr $a \> $b`
+student@T11:~$ echo $res
+0
+student@T11:~$ res=`expr $a \! $b`
+expr: syntax error
+student@T11:~$ res=`expr $a \!= $b`
+student@T11:~$ echo $res
+1
+student@T11:~$ x=geeks
+student@T11:~$ len=`expr length $x` 
+student@T11:~$ echo $len
+5
+student@T11:~$ x=helloworld
+student@T11:~$ sub=`expr substr $x 2 3`
+student@T11:~$ echo $sub
+ell
+student@T11:~$ expr greeks : geek
+0
+student@T11:~$ expr --help
+Usage: expr EXPRESSION
+  or:  expr OPTION
+
+      --help     display this help and exit
+      --version  output version information and exit
+
+Print the value of EXPRESSION to standard output.  A blank line below
+separates increasing precedence groups.  EXPRESSION may be:
+
+  ARG1 | ARG2       ARG1 if it is neither null nor 0, otherwise ARG2
+
+  ARG1 & ARG2       ARG1 if neither argument is null or 0, otherwise 0
+
+  ARG1 < ARG2       ARG1 is less than ARG2
+  ARG1 <= ARG2      ARG1 is less than or equal to ARG2
+  ARG1 = ARG2       ARG1 is equal to ARG2
+  ARG1 != ARG2      ARG1 is unequal to ARG2
+  ARG1 >= ARG2      ARG1 is greater than or equal to ARG2
+  ARG1 > ARG2       ARG1 is greater than ARG2
+
+  ARG1 + ARG2       arithmetic sum of ARG1 and ARG2
+  ARG1 - ARG2       arithmetic difference of ARG1 and ARG2
+
+  ARG1 * ARG2       arithmetic product of ARG1 and ARG2
+  ARG1 / ARG2       arithmetic quotient of ARG1 divided by ARG2
+  ARG1 % ARG2       arithmetic remainder of ARG1 divided by ARG2
+
+  STRING : REGEXP   anchored pattern match of REGEXP in STRING
+
+  match STRING REGEXP        same as STRING : REGEXP
+  substr STRING POS LENGTH   substring of STRING, POS counted from 1
+  index STRING CHARS         index in STRING where any CHARS is found, or 0
+  length STRING              length of STRING
+  + TOKEN                    interpret TOKEN as a string, even if it is a
+                               keyword like 'match' or an operator like '/'
+
+  ( EXPRESSION )             value of EXPRESSION
+
+Beware that many operators need to be escaped or quoted for shells.
+Comparisons are arithmetic if both ARGs are numbers, else lexicographical.
+Pattern matches return the string matched between \( and \) or null; if
+\( and \) are not used, they return the number of characters matched or 0.
+
+Exit status is 0 if EXPRESSION is neither null nor 0, 1 if EXPRESSION is null
+or 0, 2 if EXPRESSION is syntactically invalid, and 3 if an error occurred.
+
+GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+Full documentation at: <http://www.gnu.org/software/coreutils/expr>
+or available locally via: info '(coreutils) expr invocation'
+student@T11:~$ expr --version
+expr (GNU coreutils) 8.28
+Copyright (C) 2017 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Mike Parker, James Youngman, and Paul Eggert.
+student@T11:~$ expr asha : asham
+0
+student@T11:~$ expr asha : asha
+4
+student@T11:~$ expr asham : asha
+4
+student@T11:~$ 
+

@@ -1,0 +1,430 @@
+student@T11:~$ mkdir ajce
+student@T11:~$ cd ajce
+student@T11:~/ajce$ mkdir mca
+student@T11:~/ajce$ cd mca
+student@T11:~/ajce/mca$ mkdir rmca
+student@T11:~/ajce/mca$ mkdir lmca
+student@T11:~/ajce/mca$ mkdir intmca
+student@T11:~/ajce/mca$ cd rmca
+student@T11:~/ajce/mca/rmca$ cd ..
+student@T11:~/ajce/mca$ cd ~
+student@T11:~$ pwd
+/home/student
+student@T11:~$ cd /
+student@T11:/$ cd ~
+student@T11:~$ cd ajce
+student@T11:~/ajce$ cd ..
+student@T11:~$ cd mca
+bash: cd: mca: No such file or directory
+student@T11:~$ cd ~
+student@T11:~$ cd mca
+bash: cd: mca: No such file or directory
+student@T11:~$ cd ajce
+student@T11:~/ajce$ cd mca
+student@T11:~/ajce/mca$ ls
+intmca  lmca  rmca
+student@T11:~/ajce/mca$ ls -l
+total 12
+drwxr-xr-x 2 student student 4096 Jan 31 20:05 intmca
+drwxr-xr-x 2 student student 4096 Jan 31 20:05 lmca
+drwxr-xr-x 2 student student 4096 Jan 31 20:05 rmca
+student@T11:~/ajce/mca$ ls > out.txt
+student@T11:~/ajce/mca$ ls -d */
+intmca/  lmca/  rmca/
+student@T11:~/ajce/mca$ ls -d $pwd
+.
+student@T11:~/ajce/mca$ ls -d $pwd/*
+/bin    /etc             /lib         /mnt   /run   /stage2.img  /var
+/boot   /home            /lib64       /opt   /sbin  /sys         /vmlinuz
+/cdrom  /initrd.img      /lost+found  /proc  /snap  /tmp         /vmlinuz.old
+/dev    /initrd.img.old  /media       /root  /srv   /usr
+student@T11:~/ajce/mca$ ls -t
+out.txt  intmca  lmca  rmca
+student@T11:~/ajce/mca$ ls -s
+total 16
+4 intmca  4 lmca  4 out.txt  4 rmca
+student@T11:~/ajce/mca$ ls > in.txt
+student@T11:~/ajce/mca$ ls documents/wtstudent
+ls: cannot access 'documents/wtstudent': No such file or directory
+student@T11:~/ajce/mca$ cd home/music
+bash: cd: home/music: No such file or directory
+student@T11:~/ajce/mca$ cd home
+bash: cd: home: No such file or directory
+student@T11:~/ajce/mca$ cd ~
+student@T11:~$ ls music/wtstudent
+ls: cannot access 'music/wtstudent': No such file or directory
+student@T11:~$ ls
+ajce  Desktop    Downloads         Music     Public           snap       Videos
+anto  Documents  examples.desktop  Pictures  PycharmProjects  Templates
+student@T11:~$ ls Music/wtstudent
+dbcon.php    insertstud.php    studentpage.php
+delstud.php  studentlogin.php  updatestud.php
+student@T11:~$ ls /
+bin    etc             lib         mnt   run   stage2.img  var
+boot   home            lib64       opt   sbin  sys         vmlinuz
+cdrom  initrd.img      lost+found  proc  snap  tmp         vmlinuz.old
+dev    initrd.img.old  media       root  srv   usr
+student@T11:~$ ls ..
+android  mca  student
+student@T11:~$ ls ~
+ajce  Desktop    Downloads         Music     Public           snap       Videos
+anto  Documents  examples.desktop  Pictures  PycharmProjects  Templates
+student@T11:~$ ls -l
+total 60
+drwxr-xr-x 3 student student 4096 Jan 31 20:03 ajce
+drwxr-xr-x 2 student student 4096 Jan 29 20:58 anto
+drwxr-xr-x 3 student student 4096 Jan 28 14:41 Desktop
+drwxr-xr-x 3 student student 4096 Nov 26 16:55 Documents
+drwxr-xr-x 2 student student 4096 Jan 28 21:56 Downloads
+-rw-r--r-- 1 student student 8980 Nov 23 10:26 examples.desktop
+drwxr-xr-x 3 student student 4096 Nov 27 15:56 Music
+drwxr-xr-x 2 student student 4096 Nov 23 11:52 Pictures
+drwxr-xr-x 2 student student 4096 Nov 23 10:27 Public
+drwxrwxr-x 3 student student 4096 Nov 26 14:59 PycharmProjects
+drwxr-xr-x 3 student student 4096 Nov 26 14:58 snap
+drwxr-xr-x 2 student student 4096 Nov 23 10:27 Templates
+drwxr-xr-x 2 student student 4096 Nov 23 10:27 Videos
+student@T11:~$ ls -a
+.              .bashrc    examples.desktop  Music              PycharmProjects
+..             .cache     .gnupg            .oracle_jre_usage  snap
+ajce           .config    .ICEauthority     Pictures           .ssh
+anto           Desktop    .java             .profile           Templates
+.bash_history  Documents  .local            Public             .thunderbird
+.bash_logout   Downloads  .mozilla          .PyCharmCE2018.3   Videos
+student@T11:~$ ls -la
+total 132
+drwxr-xr-x 24 student student 4096 Jan 31 20:01 .
+drwxr-xr-x  5 root    root    4096 Nov 23 10:26 ..
+drwxr-xr-x  3 student student 4096 Jan 31 20:03 ajce
+drwxr-xr-x  2 student student 4096 Jan 29 20:58 anto
+-rw-------  1 student student 1427 Jan 29 21:47 .bash_history
+-rw-r--r--  1 student student  220 Nov 23 10:26 .bash_logout
+-rw-r--r--  1 student student 3771 Nov 23 10:26 .bashrc
+drwx------ 16 student student 4096 Nov 27 15:56 .cache
+drwx------ 17 student student 4096 Nov 27 21:22 .config
+drwxr-xr-x  3 student student 4096 Jan 28 14:41 Desktop
+drwxr-xr-x  3 student student 4096 Nov 26 16:55 Documents
+drwxr-xr-x  2 student student 4096 Jan 28 21:56 Downloads
+-rw-r--r--  1 student student 8980 Nov 23 10:26 examples.desktop
+drwx------  3 student student 4096 Nov 26 14:58 .gnupg
+-rw-------  1 student student 4284 Jan 31 19:47 .ICEauthority
+drwxrwxr-x  4 student student 4096 Nov 26 14:58 .java
+drwx------  3 student student 4096 Nov 23 10:27 .local
+drwx------  5 student student 4096 Nov 23 12:47 .mozilla
+drwxr-xr-x  3 student student 4096 Nov 27 15:56 Music
+drwxrwxr-x  2 student student 4096 Nov 26 16:52 .oracle_jre_usage
+drwxr-xr-x  2 student student 4096 Nov 23 11:52 Pictures
+-rw-r--r--  1 student student  807 Nov 23 10:26 .profile
+drwxr-xr-x  2 student student 4096 Nov 23 10:27 Public
+drwxrwxr-x  4 student student 4096 Nov 26 14:58 .PyCharmCE2018.3
+drwxrwxr-x  3 student student 4096 Nov 26 14:59 PycharmProjects
+drwxr-xr-x  3 student student 4096 Nov 26 14:58 snap
+drwx------  2 student student 4096 Nov 26 14:58 .ssh
+drwxr-xr-x  2 student student 4096 Nov 23 10:27 Templates
+drwx------  4 student student 4096 Nov 26 17:15 .thunderbird
+drwxr-xr-x  2 student student 4096 Nov 23 10:27 Videos
+student@T11:~$ ls *
+examples.desktop
+
+ajce:
+mca
+
+anto:
+prog1.txt
+
+Desktop:
+ashmy
+
+Documents:
+'programs 2018'
+
+Downloads:
+FormPalindrome.html  formvalidation.html  Palindrome.py  text.html
+
+Music:
+wtstudent
+
+Pictures:
+'Screenshot from 2018-11-23 11-52-57.png'
+
+Public:
+
+PycharmProjects:
+cgiprojcts
+
+snap:
+pycharm-community
+
+Templates:
+
+Videos:
+student@T11:~$ ls -R
+.:
+ajce  Desktop    Downloads         Music     Public           snap       Videos
+anto  Documents  examples.desktop  Pictures  PycharmProjects  Templates
+
+./ajce:
+mca
+
+./ajce/mca:
+intmca  in.txt  lmca  out.txt  rmca
+
+./ajce/mca/intmca:
+
+./ajce/mca/lmca:
+
+./ajce/mca/rmca:
+
+./anto:
+prog1.txt
+
+./Desktop:
+ashmy
+
+./Desktop/ashmy:
+ 61NMxvaC6VL._SX425_.jpg   image1.jpg   text.html  'Untitled Document 1'
+
+./Documents:
+'programs 2018'
+
+'./Documents/programs 2018':
+'exceptions (divi. by zero)'      'exceptions (divi. by zero).o'
+'exceptions (divi. by zero).cpp'  'rethrow eg.cpp'
+
+./Downloads:
+FormPalindrome.html  formvalidation.html  Palindrome.py  text.html
+
+./Music:
+wtstudent
+
+./Music/wtstudent:
+dbcon.php    insertstud.php    studentpage.php
+delstud.php  studentlogin.php  updatestud.php
+
+./Pictures:
+'Screenshot from 2018-11-23 11-52-57.png'
+
+./Public:
+
+./PycharmProjects:
+cgiprojcts
+
+./PycharmProjects/cgiprojcts:
+avgvar.py  profilecgi.py  vararg.py  venv
+
+./PycharmProjects/cgiprojcts/venv:
+bin  include  lib  lib64  pyvenv.cfg
+
+./PycharmProjects/cgiprojcts/venv/bin:
+activate      activate.fish  easy_install-3.6  pip3    python   python3.6
+activate.csh  easy_install   pip               pip3.6  python3
+
+./PycharmProjects/cgiprojcts/venv/include:
+
+./PycharmProjects/cgiprojcts/venv/lib:
+python3.6
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6:
+site-packages
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages:
+easy-install.pth      setuptools-39.1.0-py3.6.egg
+pip-10.0.1-py3.6.egg  setuptools.pth
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg:
+EGG-INFO  pip
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/EGG-INFO:
+dependency_links.txt  not-zip-safe  requires.txt  top_level.txt
+entry_points.txt      PKG-INFO      SOURCES.txt
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip:
+__init__.py  _internal  __main__.py  _vendor
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal:
+basecommand.py  commands          index.py      pep425tags.py    vcs
+baseparser.py   compat.py         __init__.py   req              wheel.py
+build_env.py    configuration.py  locations.py  resolve.py
+cache.py        download.py       models        status_codes.py
+cmdoptions.py   exceptions.py     operations    utils
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands:
+check.py          download.py  help.py      list.py    uninstall.py
+completion.py     freeze.py    __init__.py  search.py  wheel.py
+configuration.py  hash.py      install.py   show.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/models:
+index.py  __init__.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/operations:
+check.py  freeze.py  __init__.py  prepare.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/req:
+__init__.py  req_file.py  req_install.py  req_set.py  req_uninstall.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils:
+appdirs.py      filesystem.py  __init__.py  outdated.py          temp_dir.py
+deprecation.py  glibc.py       logging.py   packaging.py         typing.py
+encoding.py     hashes.py      misc.py      setuptools_build.py  ui.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/vcs:
+bazaar.py  git.py  __init__.py  mercurial.py  subversion.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor:
+appdirs.py    distlib      ipaddress.py   progress      six.py
+cachecontrol  distro.py    lockfile       pyparsing.py  urllib3
+certifi       html5lib     msgpack        pytoml        webencodings
+chardet       idna         packaging      requests
+colorama      __init__.py  pkg_resources  retrying.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol:
+adapter.py  caches   compat.py      filewrapper.py  __init__.py   wrapper.py
+cache.py    _cmd.py  controller.py  heuristics.py   serialize.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/caches:
+file_cache.py  __init__.py  redis_cache.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/certifi:
+cacert.pem  core.py  __init__.py  __main__.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet:
+big5freq.py            euckrprober.py         langthaimodel.py
+big5prober.py          euctwfreq.py           langturkishmodel.py
+chardistribution.py    euctwprober.py         latin1prober.py
+charsetgroupprober.py  gb2312freq.py          mbcharsetprober.py
+charsetprober.py       gb2312prober.py        mbcsgroupprober.py
+cli                    hebrewprober.py        mbcssm.py
+codingstatemachine.py  __init__.py            sbcharsetprober.py
+compat.py              jisfreq.py             sbcsgroupprober.py
+cp949prober.py         jpcntx.py              sjisprober.py
+enums.py               langbulgarianmodel.py  universaldetector.py
+escprober.py           langcyrillicmodel.py   utf8prober.py
+escsm.py               langgreekmodel.py      version.py
+eucjpprober.py         langhebrewmodel.py
+euckrfreq.py           langhungarianmodel.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/cli:
+chardetect.py  __init__.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama:
+ansi.py  ansitowin32.py  initialise.py  __init__.py  win32.py  winterm.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib:
+_backport    index.py     manifest.py  resources.py  t64.exe     w32.exe
+compat.py    __init__.py  markers.py   scripts.py    util.py     w64.exe
+database.py  locators.py  metadata.py  t32.exe       version.py  wheel.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/_backport:
+__init__.py  misc.py  shutil.py  sysconfig.cfg  sysconfig.py  tarfile.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib:
+constants.py    _ihatexml.py     serializer.py  treebuilders  _utils.py
+filters         __init__.py      _tokenizer.py  treewalkers
+html5parser.py  _inputstream.py  treeadapters   _trie
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters:
+alphabeticalattributes.py  inject_meta_charset.py  sanitizer.py
+base.py                    lint.py                 whitespace.py
+__init__.py                optionaltags.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treeadapters:
+genshi.py  __init__.py  sax.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders:
+base.py  dom.py  etree_lxml.py  etree.py  __init__.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers:
+base.py  dom.py  etree_lxml.py  etree.py  genshi.py  __init__.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_trie:
+_base.py  datrie.py  __init__.py  py.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna:
+codec.py   core.py      __init__.py   package_data.py
+compat.py  idnadata.py  intranges.py  uts46data.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile:
+__init__.py      mkdirlockfile.py  sqlitelockfile.py
+linklockfile.py  pidlockfile.py    symlinklockfile.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/msgpack:
+exceptions.py  fallback.py  __init__.py  _version.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging:
+__about__.py  __init__.py  requirements.py  _structures.py  version.py
+_compat.py    markers.py   specifiers.py    utils.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pkg_resources:
+__init__.py  py31compat.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/progress:
+bar.py  counter.py  helpers.py  __init__.py  spinner.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pytoml:
+core.py  __init__.py  parser.py  writer.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests:
+adapters.py  compat.py      hooks.py            packages.py      utils.py
+api.py       cookies.py     __init__.py         sessions.py      __version__.py
+auth.py      exceptions.py  _internal_utils.py  status_codes.py
+certs.py     help.py        models.py           structures.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3:
+_collections.py    contrib        filepost.py  poolmanager.py  util
+connectionpool.py  exceptions.py  __init__.py  request.py
+connection.py      fields.py      packages     response.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib:
+appengine.py  ntlmpool.py   _securetransport    socks.py
+__init__.py   pyopenssl.py  securetransport.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/_securetransport:
+bindings.py  __init__.py  low_level.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages:
+backports  __init__.py  ordered_dict.py  six.py  ssl_match_hostname
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/backports:
+__init__.py  makefile.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/ssl_match_hostname:
+_implementation.py  __init__.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util:
+connection.py  request.py   retry.py      ssl_.py     url.py
+__init__.py    response.py  selectors.py  timeout.py  wait.py
+
+./PycharmProjects/cgiprojcts/venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/webencodings:
+__init__.py  labels.py  mklabels.py  tests.py  x_user_defined.py
+
+./snap:
+pycharm-community
+
+./snap/pycharm-community:
+108  99  common  current
+
+./snap/pycharm-community/108:
+
+./snap/pycharm-community/99:
+
+./snap/pycharm-community/common:
+
+./Templates:
+
+./Videos:
+student@T11:~$ cd ~
+student@T11:~$ cd ajce
+student@T11:~/ajce$ ls -d */
+mca/
+student@T11:~/ajce$ ls -d $pwd/*
+/bin   /cdrom  /etc   /initrd.img      /lib    /lost+found  /mnt  /proc  /run   /snap  /stage2.img  /tmp  /var      /vmlinuz.old
+/boot  /dev    /home  /initrd.img.old  /lib64  /media       /opt  /root  /sbin  /srv   /sys         /usr  /vmlinuz
+student@T11:~/ajce$ cd /
+student@T11:/$ man mkdir
+student@T11:/$ man pwd
+student@T11:/$ man pwd
+student@T11:/$ man ls
+student@T11:/$ man ls
+student@T11:/$ man ls
+student@T11:/$ 
+

@@ -1,0 +1,791 @@
+student@T11:~$ cd ajce
+student@T11:~/ajce$ cut -f 2 f1.txt
+a+iam +asha
+hellooo scccsvv
+dfdfvg vfdcv
+student@T11:~/ajce$ cut -f 3 f1.txt
+a+iam +asha
+ssss
+
+student@T11:~/ajce$ cut -d, -f 3 f1.txt
+a+iam +asha
+	hellooo scccsvv	ssss
+
+student@T11:~/ajce$ more f1.txt
+
+more command in Linux with Examples
+
+more command is used to view the text files in the command prompt, displaying on
+e screen at a time in case the file is large (For example log files). The more c
+ommand also allows the user do scroll up and down through the page. The syntax a
+long with options and command is as follows. Another application of more is to u
+se it with some other command after a pipe. When output is large, we can use mor
+e command to see output one by one.
+
+Syntax:
+
+    more [-options] [-num] [+/pattern] [+linenum] [file_name]
+
+    [-options]: any option that you want to use in order to change the way the f
+ile is displayed.
+    Choose any one from the following-:
+    (-d, -l, -f, -p, -c, -s, -u)
+    [-num]: type the number of lines that you want to display per screen.
+    [+/pattern]: replace pattern with any string that you want to find in the te
+xt file.
+    [+linenum]: use the line number from where you want to start displaying the 
+text content.
+student@T11:~/ajce$ more -d f1.txt
+
+more command in Linux with Examples
+
+more command is used to view the text files in the command prompt, displaying on
+e screen at a time in case the file is large (For example log files). The more c
+ommand also allows the user do scroll up and down through the page. The syntax a
+long with options and command is as follows. Another application of more is to u
+se it with some other command after a pipe. When output is large, we can use mor
+e command to see output one by one.
+
+Syntax:
+
+    more [-options] [-num] [+/pattern] [+linenum] [file_name]
+
+    [-options]: any option that you want to use in order to change the way the f
+ile is displayed.
+    Choose any one from the following-:
+    (-d, -l, -f, -p, -c, -s, -u)
+    [-num]: type the number of lines that you want to display per screen.
+    [+/pattern]: replace pattern with any string that you want to find in the te
+xt file.
+    [+linenum]: use the line number from where you want to start displaying the 
+text content.
+    [file_name]: name of the file containing the text that you want to display o
+n the screen.
+
+while viewing the text file use these controls :
+
+
+    Enter key: to scroll down line by line.
+    Space bar: To go to the next page.
+    b key: To go to back one page.
+
+options used with more command
+-d :use this command in order to help the user to navigate. It displays “[Press 
+space to continue, ‘q’ to quit.]” and displays “[Press ‘h’ for instructions.]” w
+hen wrong key is pressed.
+Example:
+
+Input : 
+student@T11:~/ajce$ more -f f1.txt
+
+more command in Linux with Examples
+
+more command is used to view the text files in the command prompt, displaying one screen at a time in case the file is large (For example log files). The more command also allows the user do scroll up and down through the page. The syntax along with options and command is as follows. Another application of more is
+ to use it with some other command after a pipe. When output is large, we can use more command to see output one by one.
+
+Syntax:
+
+    more [-options] [-num] [+/pattern] [+linenum] [file_name]
+
+    [-options]: any option that you want to use in order to change the way the file is displayed.
+    Choose any one from the following-:
+    (-d, -l, -f, -p, -c, -s, -u)
+    [-num]: type the number of lines that you want to display per screen.
+    [+/pattern]: replace pattern with any string that you want to find in the text file.
+    [+linenum]: use the line number from where you want to start displaying the text content.
+    [file_name]: name of the file containing the text that you want to display on the screen.
+
+while viewing the text file use these controls :
+
+
+    Enter key: to scroll down line by line.
+    Space bar: To go to the next page.
+student@T11:~/ajce$ more -p f1.txt
+
+
+more command in Linux with Examples
+
+more command is used to view the text files in the command prompt, displaying one screen at a time in case the file is large (For example log 
+files). The more command also allows the user do scroll up and down through the page. The syntax along with options and command is as follows.
+ Another application of more is to use it with some other command after a pipe. When output is large, we can use more command to see output on
+e by one.
+
+Syntax:
+
+    more [-options] [-num] [+/pattern] [+linenum] [file_name]
+
+    [-options]: any option that you want to use in order to change the way the file is displayed.
+    Choose any one from the following-:
+    (-d, -l, -f, -p, -c, -s, -u)
+    [-num]: type the number of lines that you want to display per screen.
+    [+/pattern]: replace pattern with any string that you want to find in the text file.
+    [+linenum]: use the line number from where you want to start displaying the text content.
+    [file_name]: name of the file containing the text that you want to display on the screen.
+
+while viewing the text file use these controls :
+
+
+    Enter key: to scroll down line by line.
+    Space bar: To go to the next page.
+    b key: To go to back one page.
+
+options used with more command
+-d :use this command in order to help the user to navigate. It displays “[Press space to continue, ‘q’ to quit.]” and displays “[Press ‘h’ for
+ instructions.]” when wrong key is pressed.
+Example:
+
+Input : 
+student@T11:~/ajce$ more  f1.txt
+
+more command in Linux with Examples
+
+more command is used to view the text files in the command prompt, displaying one screen at a time in case the file is large (For example log 
+files). The more command also allows the user do scroll up and down through the page. The syntax along with options and command is as follows.
+ Another application of more is to use it with some other command after a pipe. When output is large, we can use more command to see output on
+e by one.
+
+Syntax:
+
+    more [-options] [-num] [+/pattern] [+linenum] [file_name]
+
+    [-options]: any option that you want to use in order to change the way the file is displayed.
+    Choose any one from the following-:
+    (-d, -l, -f, -p, -c, -s, -u)
+    [-num]: type the number of lines that you want to display per screen.
+    [+/pattern]: replace pattern with any string that you want to find in the text file.
+    [+linenum]: use the line number from where you want to start displaying the text content.
+    [file_name]: name of the file containing the text that you want to display on the screen.
+
+while viewing the text file use these controls :
+
+
+    Enter key: to scroll down line by line.
+    Space bar: To go to the next page.
+    b key: To go to back one page.
+
+options used with more command
+-d :use this command in order to help the user to navigate. It displays “[Press space to continue, ‘q’ to quit.]” and displays “[Press ‘h’ for
+ instructions.]” when wrong key is pressed.
+Example:
+
+Input : 
+student@T11:~/ajce$ more +/pattern f1.txt
+
+...skipping
+Syntax:
+
+    more [-options] [-num] [+/pattern] [+linenum] [file_name]
+
+    [-options]: any option that you want to use in order to change the way the file is displayed.
+    Choose any one from the following-:
+    (-d, -l, -f, -p, -c, -s, -u)
+    [-num]: type the number of lines that you want to display per screen.
+    [+/pattern]: replace pattern with any string that you want to find in the text file.
+    [+linenum]: use the line number from where you want to start displaying the text content.
+    [file_name]: name of the file containing the text that you want to display on the screen.
+
+while viewing the text file use these controls :
+
+
+    Enter key: to scroll down line by line.
+    Space bar: To go to the next page.
+    b key: To go to back one page.
+
+options used with more command
+-d :use this command in order to help the user to navigate. It displays “[Press space to continue, ‘q’ to quit.]” and displays “[Press ‘h’ for
+ instructions.]” when wrong key is pressed.
+Example:
+
+Input : 
+student@T11:~/ajce$ more +/ "user" f1.txt
+more: stat of user failed: No such file or directory
+student@T11:~/ajce$ more +/"user" f1.txt
+
+...skipping
+more command in Linux with Examples
+
+more command is used to view the text files in the command prompt, displaying one screen at a time in case the file is large (For example log 
+files). The more command also allows the user do scroll up and down through the page. The syntax along with options and command is as follows.
+ Another application of more is to use it with some other command after a pipe. When output is large, we can use more command to see output on
+e by one.
+
+Syntax:
+
+    more [-options] [-num] [+/pattern] [+linenum] [file_name]
+
+    [-options]: any option that you want to use in order to change the way the file is displayed.
+    Choose any one from the following-:
+    (-d, -l, -f, -p, -c, -s, -u)
+    [-num]: type the number of lines that you want to display per screen.
+    [+/pattern]: replace pattern with any string that you want to find in the text file.
+    [+linenum]: use the line number from where you want to start displaying the text content.
+    [file_name]: name of the file containing the text that you want to display on the screen.
+
+while viewing the text file use these controls :
+
+
+    Enter key: to scroll down line by line.
+    Space bar: To go to the next page.
+    b key: To go to back one page.
+
+options used with more command
+-d :use this command in order to help the user to navigate. It displays “[Press space to continue, ‘q’ to quit.]” and displays “[Press ‘h’ for
+ instructions.]” when wrong key is pressed.
+Example:
+
+Input : 
+student@T11:~/ajce$ more +20 f1.txt
+
+    Enter key: to scroll down line by line.
+    Space bar: To go to the next page.
+    b key: To go to back one page.
+
+options used with more command
+-d :use this command in order to help the user to navigate. It displays “[Press space to continue, ‘q’ to quit.]” and displays “[Press ‘h’ for
+ instructions.]” when wrong key is pressed.
+Example:
+
+Input : 
+student@T11:~/ajce$ more f1.txt
+Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the 
+other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+
+For the purposes of this page, we use the term “Linux” to refer to the Linux kernel, but also the set of programs, tools, and services that ar
+e typically bundled together with the Linux kernel to provide all of the necessary components of a fully functional operating system. Some peo
+ple, particularly members of the Free Software Foundation, refer to this collection as GNU/Linux, because many of the tools included are GNU c
+omponents. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a Linux ker
+nel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+
+In many ways, Linux is similar to other operating systems you may have used before, such as Windows, OS X, or iOS. Like other operating system
+s, Linux has a graphical interface, and types of software you are accustomed to using on other operating systems, such as word processing appl
+ications, have Linux equivalents. In many cases, the software’s creator may have made a Linux version of the same program you use on other sys
+tems. If you can use a computer or other electronic device, you can use Linux.
+
+But Linux also is different from other operating systems in many important ways. First, and perhaps most importantly, Linux is open source sof
+tware. The code used to create Linux is free and available to the public to view, edit, and—for users with the appropriate skills—to contribut
+e to.
+
+Linux is also different in that, although the core pieces of the Linux operating system are generally common, there are many distributions of 
+Linux, which include different software options. This means that Linux is incredibly customizable, because not just applications, such as word
+ processors and web browsers, can be swapped out. Linux users also can choose core components, such as which system displays graphics, and oth
+er user-interface components.
+student@T11:~/ajce$ more -d f1.txt
+Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the 
+other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+
+For the purposes of this page, we use the term “Linux” to refer to the Linux kernel, but also the set of programs, tools, and services that ar
+e typically bundled together with the Linux kernel to provide all of the necessary components of a fully functional operating system. Some peo
+ple, particularly members of the Free Software Foundation, refer to this collection as GNU/Linux, because many of the tools included are GNU c
+omponents. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a Linux ker
+nel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+
+In many ways, Linux is similar to other operating systems you may have used before, such as Windows, OS X, or iOS. Like other operating system
+s, Linux has a graphical interface, and types of software you are accustomed to using on other operating systems, such as word processing appl
+ications, have Linux equivalents. In many cases, the software’s creator may have made a Linux version of the same program you use on other sys
+tems. If you can use a computer or other electronic device, you can use Linux.
+
+But Linux also is different from other operating systems in many important ways. First, and perhaps most importantly, Linux is open source sof
+tware. The code used to create Linux is free and available to the public to view, edit, and—for users with the appropriate skills—to contribut
+e to.
+
+Linux is also different in that, although the core pieces of the Linux operating system are generally common, there are many distributions of 
+Linux, which include different software options. This means that Linux is incredibly customizable, because not just applications, such as word
+ processors and web browsers, can be swapped out. Linux users also can choose core components, such as which system displays graphics, and oth
+er user-interface components.
+student@T11:~/ajce$ more -d f1.txt
+Linux is the best-known and most-used open source operating system. As an operat
+ing system, Linux is software that sits underneath all of the other software on 
+a computer, receiving requests from those programs and relaying these requests t
+o the computer’s hardware.
+
+For the purposes of this page, we use the term “Linux” to refer to the Linux ker
+nel, but also the set of programs, tools, and services that are typically bundle
+d together with the Linux kernel to provide all of the necessary components of a
+ fully functional operating system. Some people, particularly members of the Fre
+e Software Foundation, refer to this collection as GNU/Linux, because many of th
+e tools included are GNU components. However, not all Linux installations use GN
+U components as a part of their operating system. Android, for example, uses a L
+inux kernel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+
+In many ways, Linux is similar to other operating systems you may have used befo
+re, such as Windows, OS X, or iOS. Like other operating systems, Linux has a gra
+phical interface, and types of software you are accustomed to using on other ope
+rating systems, such as word processing applications, have Linux equivalents. In
+ many cases, the software’s creator may have made a Linux version of the same pr
+ogram you use on other systems. If you can use a computer or other electronic de
+vice, you can use Linux.
+
+But Linux also is different from other operating systems in many important ways. First, and perhaps most importantly, Linux is open source sof
+tware. The code used to create Linux is free and available to the public to view, edit, and—for users with the appropriate skills—to contribut
+e to.
+
+Linux is also different in that, although the core pieces of the Linux operating system are generally common, there are many distributions of 
+Linux, which include different software options. This means that Linux is incredibly customizable, because not just applications, such as word
+ processors and web browsers, can be swapped out. Linux users also can choose core components, such as which system displays graphics, and oth
+er user-interface components.
+student@T11:~/ajce$ more -f f1.txt
+Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+
+For the purposes of this page, we use the term “Linux” to refer to the Linux kernel, but also the set of programs, tools, and services that are typically bundled together with the Linux kernel to provide all of the necessary components of a fully functional operating system. Some people, particularly members of the Free Software Foundation, refer to this collection as GNU/Linux, because many of the tools included are GNU components. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a 
+Linux kernel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+
+In many ways, Linux is similar to other operating systems you may have used before, such as Windows, OS X, or iOS. Like other operating systems, Linux has a graphical interface, and types of software you are accustomed to using on other operating systems, such as word processing applications, have Linux equivalents. In many cases, the software’s creator may have made a Linux version of the same program you use on other systems. If you can use a computer or other electronic device, you can use Linux.
+
+But Linux also is different from other operating systems in many important ways. First, and perhaps most importantly, Linux is open source software. The code used to create Linux is free and available to the public to view, edit, and—for users with the appropriate skills—to contribute to.
+
+Linux is also different in that, although the core pieces of the Linux operating system are generally common, there are many distributions of Linux, which include different software options. This means that Linux is incredibly customizable, because not just applications, such as word processors and web browsers, can be swapped out. Linux users also can choose core components, such as which system displays graphics, and other user-interface components.
+student@T11:~/ajce$ more -f f1.txt
+Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+
+For the purposes of this page, we use the term “Linux” to refer to the Linux kernel, but also the set of programs, tools, and services that are typically bundled together with the Linux kernel to provide all of the necessary components of a fully functional operating system. Some people, particularly members o
+f the Free Software Foundation, refer to this collection as GNU/Linux, because many of the tools included are GNU components. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a Linux kernel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+
+In many ways, Linux is similar to other operating systems you may have used before, such as Windows, OS X, or iOS. Like other operating systems, Linux has a graphical interface, and types of software you are accustomed to using on other operating systems, such as word processing applications, have Linux equivalent
+s. In many cases, the software’s creator may have made a Linux version of the same program you use on other systems. If you can use a computer or other electronic device, you can use Linux.
+
+But Linux also is different from other operating systems in many important ways. First, and perhaps most importantly, Linux is open source software. The code used to create Linux is free and available to the public to view, edit, and—for users with the appropriate skills—to contribute to.
+
+Linux is also different in that, although the core pieces of the Linux operating system are generally common, there are many distributions of Linux, which include different software options. This means that Linux is incredibly customizable, because not just applications, such as word processors and web browsers, c
+an be swapped out. Linux users also can choose core components, such as which system displays graphics, and other user-interface components.
+student@T11:~/ajce$ more -f f1.txt
+Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+
+For the purposes of this page, we use the term “Linux” to refer to the Linux kernel, but also the set of programs, tools, and services that are typically bundled together with the Linux kernel to provide all of the necessary components of a fully functional operating system. Some people, particularly members o
+f the Free Software Foundation, refer to this collection as GNU/Linux, because many of the tools included are GNU components. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a Linux kernel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+
+In many ways, Linux is similar to other operating systems you may have used before, such as Windows, OS X, or iOS. Like other operating systems, Linux has a graphical interface, and types of software you are accustomed to using on other operating systems, such as word processing applications, have Linux equivalent
+s. In many cases, the software’s creator may have made a Linux version of the same program you use on other systems. If you can use a computer or other electronic device, you can use Linux.
+
+But Linux also is different from other operating systems in many important ways. First, and perhaps most importantly, Linux is open source software. The code used to create Linux is free and available to the public to view, edit, and—for users with the appropriate skills—to contribute to.
+
+Linux is also different in that, although the core pieces of the Linux operating system are generally common, there are many distributions of Linux, which include different software options. This means that Linux is incredibly customizable, because not just applications, such as word processors and web browsers, c
+an be swapped out. Linux users also can choose core components, such as which system displays graphics, and other user-interface components.
+student@T11:~/ajce$ more -f f1.txt
+Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+
+For the purposes of this page, we use the term “Linux” to refer to the Linux kernel, but also the set of programs, tools, and services that are typically bundled together with the Linux kernel to provide all of the necessary components of a fully functional operating system. Some people, particularly members o
+f the Free Software Foundation, refer to this collection as GNU/Linux, because many of the tools included are GNU components. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a Linux kernel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+
+In many ways, Linux is similar to other operating systems you may have used before, such as Windows, OS X, or iOS. Like other operating systems, Linux has a graphical interface, and types of software you are accustomed to using on other operating systems, such as word processing applications, have Linux equivalent
+s. In many cases, the software’s creator may have made a Linux version of the same program you use on other systems. If you can use a computer or other electronic device, you can use Linux.
+
+But Linux also is different from other operating systems in many important ways. First, and perhaps most importantly, Linux is open source software. The code used to create Linux is free and available to the public to view, edit, and—for users with the appropriate skills—to contribute to.
+
+Linux is also different in that, although the core pieces of the Linux operating system are generally common, there are many distributions of Linux, which include different software options. This means that Linux is incredibly customizable, because not just applications, such as word processors and web browsers, c
+an be swapped out. Linux users also can choose core components, such as which system displays graphics, and other user-interface components.
+student@T11:~/ajce$ more -p f1.txt
+
+Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the 
+other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+
+For the purposes of this page, we use the term “Linux” to refer to the Linux kernel, but also the set of programs, tools, and services that ar
+e typically bundled together with the Linux kernel to provide all of the necessary components of a fully functional operating system. Some peo
+ple, particularly members of the Free Software Foundation, refer to this collection as GNU/Linux, because many of the tools included are GNU c
+omponents. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a Linux ker
+nel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+
+In many ways, Linux is similar to other operating systems you may have used before, such as Windows, OS X, or iOS. Like other operating system
+s, Linux has a graphical interface, and types of software you are accustomed to using on other operating systems, such as word processing appl
+ications, have Linux equivalents. In many cases, the software’s creator may have made a Linux version of the same program you use on other sys
+tems. If you can use a computer or other electronic device, you can use Linux.
+
+But Linux also is different from other operating systems in many important ways. First, and perhaps most importantly, Linux is open source sof
+tware. The code used to create Linux is free and available to the public to view, edit, and—for users with the appropriate skills—to contribut
+e to.
+
+Linux is also different in that, although the core pieces of the Linux operating system are generally common, there are many distributions of 
+Linux, which include different software options. This means that Linux is incredibly customizable, because not just applications, such as word
+ processors and web browsers, can be swapped out. Linux users also can choose core components, such as which system displays graphics, and oth
+er user-interface components.
+student@T11:~/ajce$ more -s f1.txt
+Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the 
+other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+
+For the purposes of this page, we use the term “Linux” to refer to the Linux kernel, but also the set of programs, tools, and services that ar
+e typically bundled together with the Linux kernel to provide all of the necessary components of a fully functional operating system. Some peo
+ple, particularly members of the Free Software Foundation, refer to this collection as GNU/Linux, because many of the tools included are GNU c
+omponents. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a Linux ker
+nel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+
+In many ways, Linux is similar to other operating systems you may have used before, such as Windows, OS X, or iOS. Like other operating system
+s, Linux has a graphical interface, and types of software you are accustomed to using on other operating systems, such as word processing appl
+ications, have Linux equivalents. In many cases, the software’s creator may have made a Linux version of the same program you use on other sys
+tems. If you can use a computer or other electronic device, you can use Linux.
+
+But Linux also is different from other operating systems in many important ways. First, and perhaps most importantly, Linux is open source sof
+tware. The code used to create Linux is free and available to the public to view, edit, and—for users with the appropriate skills—to contribut
+e to.
+
+Linux is also different in that, although the core pieces of the Linux operating system are generally common, there are many distributions of 
+Linux, which include different software options. This means that Linux is incredibly customizable, because not just applications, such as word
+ processors and web browsers, can be swapped out. Linux users also can choose core components, such as which system displays graphics, and oth
+er user-interface components.
+student@T11:~/ajce$ more -20 f1.txt
+Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the 
+other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+
+For the purposes of this page, we use the term “Linux” to refer to the Linux kernel, but also the set of programs, tools, and services that ar
+e typically bundled together with the Linux kernel to provide all of the necessary components of a fully functional operating system. Some peo
+ple, particularly members of the Free Software Foundation, refer to this collection as GNU/Linux, because many of the tools included are GNU c
+omponents. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a Linux ker
+nel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+
+In many ways, Linux is similar to other operating systems you may have used before, such as Windows, OS X, or iOS. Like other operating system
+s, Linux has a graphical interface, and types of software you are accustomed to using on other operating systems, such as word processing appl
+ications, have Linux equivalents. In many cases, the software’s creator may have made a Linux version of the same program you use on other sys
+tems. If you can use a computer or other electronic device, you can use Linux.
+
+But Linux also is different from other operating systems in many important ways. First, and perhaps most importantly, Linux is open source sof
+tware. The code used to create Linux is free and available to the public to view, edit, and—for users with the appropriate skills—to contribut
+e to.
+
+Linux is also different in that, although the core pieces of the Linux operating system are generally common, there are many distributions of 
+Linux, which include different software options. This means that Linux is incredibly customizable, because not just applications, such as word
+ processors and web browsers, can be swapped out. Linux users also can choose core components, such as which system displays graphics, and oth
+er user-interface components.
+student@T11:~/ajce$ more =20 f1.txt
+more: stat of =20 failed: No such file or directory
+::::::::::::::
+f1.txt
+::::::::::::::
+Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the 
+other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+
+For the purposes of this page, we use the term “Linux” to refer to the Linux kernel, but also the set of programs, tools, and services that ar
+e typically bundled together with the Linux kernel to provide all of the necessary components of a fully functional operating system. Some peo
+ple, particularly members of the Free Software Foundation, refer to this collection as GNU/Linux, because many of the tools included are GNU c
+omponents. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a Linux ker
+nel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+
+In many ways, Linux is similar to other operating systems you may have used before, such as Windows, OS X, or iOS. Like other operating system
+s, Linux has a graphical interface, and types of software you are accustomed to using on other operating systems, such as word processing appl
+ications, have Linux equivalents. In many cases, the software’s creator may have made a Linux version of the same program you use on other sys
+tems. If you can use a computer or other electronic device, you can use Linux.
+
+But Linux also is different from other operating systems in many important ways. First, and perhaps most importantly, Linux is open source sof
+tware. The code used to create Linux is free and available to the public to view, edit, and—for users with the appropriate skills—to contribut
+e to.
+
+Linux is also different in that, although the core pieces of the Linux operating system are generally common, there are many distributions of 
+Linux, which include different software options. This means that Linux is incredibly customizable, because not just applications, such as word
+ processors and web browsers, can be swapped out. Linux users also can choose core components, such as which system displays graphics, and oth
+er user-interface components.
+student@T11:~/ajce$ more +20 f1.txt
+student@T11:~/ajce$ more +20 f1.txt
+student@T11:~/ajce$ more +10 f1.txt
+Linux is also different in that, although the core pieces of the Linux operating system are generally common, there are many distributions of 
+Linux, which include different software options. This means that Linux is incredibly customizable, because not just applications, such as word
+ processors and web browsers, can be swapped out. Linux users also can choose core components, such as which system displays graphics, and oth
+er user-interface components.
+student@T11:~/ajce$ more +u f1.txt
+Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the 
+other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+
+For the purposes of this page, we use the term “Linux” to refer to the Linux kernel, but also the set of programs, tools, and services that ar
+e typically bundled together with the Linux kernel to provide all of the necessary components of a fully functional operating system. Some peo
+ple, particularly members of the Free Software Foundation, refer to this collection as GNU/Linux, because many of the tools included are GNU c
+omponents. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a Linux ker
+nel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+
+In many ways, Linux is similar to other operating systems you may have used before, such as Windows, OS X, or iOS. Like other operating system
+s, Linux has a graphical interface, and types of software you are accustomed to using on other operating systems, such as word processing appl
+ications, have Linux equivalents. In many cases, the software’s creator may have made a Linux version of the same program you use on other sys
+tems. If you can use a computer or other electronic device, you can use Linux.
+
+But Linux also is different from other operating systems in many important ways. First, and perhaps most importantly, Linux is open source sof
+tware. The code used to create Linux is free and available to the public to view, edit, and—for users with the appropriate skills—to contribut
+e to.
+
+Linux is also different in that, although the core pieces of the Linux operating system are generally common, there are many distributions of 
+Linux, which include different software options. This means that Linux is incredibly customizable, because not just applications, such as word
+ processors and web browsers, can be swapped out. Linux users also can choose core components, such as which system displays graphics, and oth
+er user-interface components.
+student@T11:~/ajce$ more
+more: bad usage
+Try 'more --help' for more information.
+student@T11:~/ajce$ more f1.txt
+Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the 
+other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+
+For the purposes of this page, we use the term “Linux” to refer to the Linux kernel, but also the set of programs, tools, and services that ar
+e typically bundled together with the Linux kernel to provide all of the necessary components of a fully functional operating system. Some peo
+ple, particularly members of the Free Software Foundation, refer to this collection as GNU/Linux, because many of the tools included are GNU c
+omponents. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a Linux ker
+nel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+
+In many ways, Linux is similar to other operating systems you may have used before, such as Windows, OS X, or iOS. Like other operating system
+s, Linux has a graphical interface, and types of software you are accustomed to using on other operating systems, such as word processing appl
+ications, have Linux equivalents. In many cases, the software’s creator may have made a Linux version of the same program you use on other sys
+tems. If you can use a computer or other electronic device, you can use Linux.
+
+But Linux also is different from other operating systems in many important ways. First, and perhaps most importantly, Linux is open source sof
+tware. The code used to create Linux is free and available to the public to view, edit, and—for users with the appropriate skills—to contribut
+e to.
+
+Linux is also different in that, although the core pieces of the Linux operating system are generally common, there are many distributions of 
+Linux, which include different software options. This means that Linux is incredibly customizable, because not just applications, such as word
+ processors and web browsers, can be swapped out. Linux users also can choose core components, such as which system displays graphics, and oth
+er user-interface components.
+student@T11:~/ajce$ more -s  f1.txt
+Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the 
+other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+
+For the purposes of this page, we use the term “Linux” to refer to the Linux kernel, but also the set of programs, tools, and services that ar
+e typically bundled together with the Linux kernel to provide all of the necessary components of a fully functional operating system. Some peo
+ple, particularly members of the Free Software Foundation, refer to this collection as GNU/Linux, because many of the tools included are GNU c
+omponents. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a Linux ker
+nel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+
+In many ways, Linux is similar to other operating systems you may have used before, such as Windows, OS X, or iOS. Like other operating system
+s, Linux has a graphical interface, and types of software you are accustomed to using on other operating systems, such as word processing appl
+ications, have Linux equivalents. In many cases, the software’s creator may have made a Linux version of the same program you use on other sys
+tems. If you can use a computer or other electronic device, you can use Linux.
+
+But Linux also is different from other operating systems in many important ways. First, and perhaps most importantly, Linux is open source sof
+tware. The code used to create Linux is free and available to the public to view, edit, and—for users with the appropriate skills—to contribut
+e to.
+
+Linux is also different in that, although the core pieces of the Linux operating system are generally common, there are many distributions of 
+Linux, which include different software options. This means that Linux is incredibly customizable, because not just applications, such as word
+ processors and web browsers, can be swapped out. Linux users also can choose core components, such as which system displays graphics, and oth
+er user-interface components.
+student@T11:~/ajce$ more -s  f1.txt
+Linux is the best-known and most-used open source operating system. As an operat
+ing system, Linux is software that sits underneath all of the other software on 
+a computer, receiving requests from those programs and relaying these requests t
+o the computer’s hardware.
+
+For the purposes of this page, we use the term “Linux” to refer to the Linux ker
+nel, but also the set of programs, tools, and services that are typically bundle
+d together with the Linux kernel to provide all of the necessary components of a
+ fully functional operating system. Some people, particularly members of the Fre
+e Software Foundation, refer to this collection as GNU/Linux, because many of th
+e tools included are GNU components. However, not all Linux installations use GN
+U components as a part of their operating system. Android, for example, uses a L
+inux kernel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+
+In many ways, Linux is similar to other operating systems you may have used befo
+re, such as Windows, OS X, or iOS. Like other operating systems, Linux has a gra
+phical interface, and types of software you are accustomed to using on other ope
+rating systems, such as word processing applications, have Linux equivalents. In
+ many cases, the software’s creator may have made a Linux version of the same pr
+ogram you use on other systems. If you can use a computer or other electronic de
+vice, you can use Linux.
+
+But Linux also is different from other operating systems in many important ways.
+ First, and perhaps most importantly, Linux is open source software. The code us
+ed to create Linux is free and available to the public to view, edit, and—for us
+ers with the appropriate skills—to contribute to.
+
+Linux is also different in that, although the core pieces of the Linux operating
+ system are generally common, there are many distributions of Linux, which inclu
+de different software options. This means that Linux is incredibly customizable,
+ because not just applications, such as word processors and web browsers, can be
+ swapped out. Linux users also can choose core components, such as which system 
+displays graphics, and other user-interface components.
+student@T11:~/ajce$ more +l f1.txt
+Linux is the best-known and most-used open source operating system. As an operat
+ing system, Linux is software that sits underneath all of the other software on 
+a computer, receiving requests from those programs and relaying these requests t
+o the computer’s hardware.
+
+For the purposes of this page, we use the term “Linux” to refer to the Linux ker
+nel, but also the set of programs, tools, and services that are typically bundle
+d together with the Linux kernel to provide all of the necessary components of a
+ fully functional operating system. Some people, particularly members of the Fre
+e Software Foundation, refer to this collection as GNU/Linux, because many of th
+e tools included are GNU components. However, not all Linux installations use GN
+U components as a part of their operating system. Android, for example, uses a L
+inux kernel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+
+In many ways, Linux is similar to other operating systems you may have used befo
+re, such as Windows, OS X, or iOS. Like other operating systems, Linux has a gra
+phical interface, and types of software you are accustomed to using on other ope
+rating systems, such as word processing applications, have Linux equivalents. In
+ many cases, the software’s creator may have made a Linux version of the same pr
+ogram you use on other systems. If you can use a computer or other electronic de
+vice, you can use Linux.
+
+But Linux also is different from other operating systems in many important ways.
+ First, and perhaps most importantly, Linux is open source software. The code us
+ed to create Linux is free and available to the public to view, edit, and—for us
+ers with the appropriate skills—to contribute to.
+
+Linux is also different in that, although the core pieces of the Linux operating
+ system are generally common, there are many distributions of Linux, which inclu
+de different software options. This means that Linux is incredibly customizable,
+ because not just applications, such as word processors and web browsers, can be
+ swapped out. Linux users also can choose core components, such as which system 
+displays graphics, and other user-interface components.
+student@T11:~/ajce$ more +u f1.txt
+Linux is the best-known and most-used open source operating system. As an operat
+ing system, Linux is software that sits underneath all of the other software on 
+a computer, receiving requests from those programs and relaying these requests t
+o the computer’s hardware.
+
+For the purposes of this page, we use the term “Linux” to refer to the Linux ker
+nel, but also the set of programs, tools, and services that are typically bundle
+d together with the Linux kernel to provide all of the necessary components of a
+ fully functional operating system. Some people, particularly members of the Fre
+e Software Foundation, refer to this collection as GNU/Linux, because many of th
+e tools included are GNU components. However, not all Linux installations use GN
+U components as a part of their operating system. Android, for example, uses a L
+inux kernel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+
+In many ways, Linux is similar to other operating systems you may have used befo
+re, such as Windows, OS X, or iOS. Like other operating systems, Linux has a gra
+phical interface, and types of software you are accustomed to using on other ope
+rating systems, such as word processing applications, have Linux equivalents. In
+ many cases, the software’s creator may have made a Linux version of the same pr
+ogram you use on other systems. If you can use a computer or other electronic de
+vice, you can use Linux.
+
+But Linux also is different from other operating systems in many important ways.
+ First, and perhaps most importantly, Linux is open source software. The code us
+ed to create Linux is free and available to the public to view, edit, and—for us
+ers with the appropriate skills—to contribute to.
+
+Linux is also different in that, although the core pieces of the Linux operating
+ system are generally common, there are many distributions of Linux, which inclu
+de different software options. This means that Linux is incredibly customizable,
+ because not just applications, such as word processors and web browsers, can be
+ swapped out. Linux users also can choose core components, such as which system 
+displays graphics, and other user-interface components. y͟o͟u͟r͟ t͟e͟x͟t͟ on 
+student@T11:~/ajce$ more -u f1.txt
+Linux is the best-known and most-used open source operating system. As an operat
+ing system, Linux is software that sits underneath all of the other software on 
+a computer, receiving requests from those programs and relaying these requests t
+o the computer’s hardware.
+
+For the purposes of this page, we use the term “Linux” to refer to the Linux ker
+nel, but also the set of programs, tools, and services that are typically bundle
+d together with the Linux kernel to provide all of the necessary components of a
+ fully functional operating system. Some people, particularly members of the Fre
+e Software Foundation, refer to this collection as GNU/Linux, because many of th
+e tools included are GNU components. However, not all Linux installations use GN
+U components as a part of their operating system. Android, for example, uses a L
+inux kernel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+
+In many ways, Linux is similar to other operating systems you may have used befo
+re, such as Windows, OS X, or iOS. Like other operating systems, Linux has a gra
+phical interface, and types of software you are accustomed to using on other ope
+rating systems, such as word processing applications, have Linux equivalents. In
+ many cases, the software’s creator may have made a Linux version of the same pr
+ogram you use on other systems. If you can use a computer or other electronic de
+vice, you can use Linux.
+
+But Linux also is different from other operating systems in many important ways.
+ First, and perhaps most importantly, Linux is open source software. The code us
+ed to create Linux is free and available to the public to view, edit, and—for us
+ers with the appropriate skills—to contribute to.
+
+Linux is also different in that, although the core pieces of the Linux operating
+ system are generally common, there are many distributions of Linux, which inclu
+de different software options. This means that Linux is incredibly customizable,
+ because not just applications, such as word processors and web browsers, can be
+ swapped out. Linux users also can choose core components, such as which system 
+displays graphics, and other user-interface components. y͟o͟u͟r͟ t͟e͟x͟t͟ on 
+student@T11:~/ajce$ more -u f1.txt
+Linux is the best-known and most-used open source operating system. As an operat
+ing system, Linux is software that sits underneath all of the other software on 
+a computer, receiving requests from those programs and relaying these requests t
+o the computer’s hardware.
+
+For the purposes of this page, we use the term “Linux” to refer to the Linux ker
+nel, but also the set of programs, tools, and services that are typically bundle
+d together with the Linux kernel to provide all of the necessary components of a
+ fully functional operating system. Some people, particularly members of the Fre
+e Software Foundation, refer to this collection as GNU/Linux, because many of th
+e tools included are GNU components. However, not all Linux installations use GN
+U components as a part of their operating system. Android, for example, uses a L
+inux kernel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+
+In many ways, Linux is similar to other operating systems you may have used befo
+re, such as Windows, OS X, or iOS. Like other operating systems, Linux has a gra
+phical interface, and types of software you are accustomed to using on other ope
+rating systems, such as word processing applications, have Linux equivalents. In
+ many cases, the software’s creator may have made a Linux version of the same pr
+ogram you use on other systems. If you can use a computer or other electronic de
+vice, you can use Linux.
+
+But Linux also is different from other operating systems in many important ways.
+ First, and perhaps most importantly, Linux is open source software. The code us
+ed to create Linux is free and available to the public to view, edit, and—for us
+ers with the appropriate skills—to contribute to.
+
+Linux is also different in that, although the core pieces of the Linux operating
+ system are generally common, there are many distributions of Linux, which inclu
+de different software options. This means that Linux is incredibly customizable,
+ because not just applications, such as word processors and web browsers, can be
+ swapped out. Linux users also can choose core components, such as which system 
+displays graphics, and other user-interface components. y͟o͟u͟r͟ t͟e͟x͟t͟ on 
+student@T11:~/ajce$ more -u f1.txt
+Linux is the best-known and most-used open source operating system. As an operat
+ing system, Linux is software that sits underneath all of the other software on 
+a computer, receiving requests from those programs and relaying these requests t
+o the computer’s hardware.
+
+For the purposes of this page, we use the term “Linux” to refer to the Linux ker
+nel, but also the set of programs, tools, and services that are typically bundle
+d together with the Linux kernel to provide all of the necessary components of a
+ fully functional operating system. Some people, particularly members of the Fre
+e Software Foundation, refer to this collection as GNU/Linux, because many of th
+e tools included are GNU components. However, not all Linux installations use GN
+U components as a part of their operating system. Android, for example, uses a L
+inux kernel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+
+In many ways, Linux is similar to other operating systems you may have used befo
+re, such as Windows, OS X, or iOS. Like other operating systems, Linux has a gra
+phical interface, and types of software you are accustomed to using on other ope
+rating systems, such as word processing applications, have Linux equivalents. In
+ many cases, the software’s creator may have made a Linux version of the same pr
+ogram you use on other systems. If you can use a computer or other electronic de
+vice, you can use Linux.
+
+But Linux also is different from other operating systems in many important ways.
+ First, and perhaps most importantly, Linux is open source software. The code us
+ed to create Linux is free and available to the public to view, edit, and—for us
+ers with the appropriate skills—to contribute to.
+
+Linux is also different in that, although the core pieces of the Linux operating
+ system are generally common, there are many distributions of Linux, which inclu
+de different software options. This means that Linux is incredibly customizable,
+ because not just applications, such as word processors and web browsers, can be
+ swapped out. Linux users also can choose core components, such as which system 
+displays graphics, and other user-interface components. y͟o͟u͟r͟   t͟e͟x͟t͟ on 
+student@T11:~/ajce$ ls | more
+examples.desktop
+f1.txt
+f2.txt
+ff1.txt
+ff2.txt
+ff3.txt
+file4.txt
+in.txt
+lateral
+myfile1
+myproject1
+project1
+timetable.html
+student@T11:~/ajce$ 
+

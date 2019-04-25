@@ -1,0 +1,154 @@
+student@T11:~$ ls
+ajce  Desktop    examples.desktop  Music     prg4.c  snap            Videos
+appu  Documents  lateral           Pictures  prgm    Templates
+arya  Downloads  mca               popo      Public  timetable.html
+student@T11:~$ ls ..
+android  mca  student
+student@T11:~$ ls /
+bin    etc             lib         mnt   run   stage2.img  var
+boot   home            lib64       opt   sbin  sys         vmlinuz
+cdrom  initrd.img      lost+found  proc  snap  tmp         vmlinuz.old
+dev    initrd.img.old  media       root  srv   usr
+student@T11:~$ cd ajce
+student@T11:~/ajce$ cat > f1.txt
+helloo world .i am here
+yuo are welcome to the world
+byee see you
+^C
+student@T11:~/ajce$ wc
+^C
+student@T11:~/ajce$ wc f1.txt
+ 3 14 66 f1.txt
+student@T11:~/ajce$ wc -l f1.txt
+3 f1.txt
+student@T11:~/ajce$ wc -c f1.txt
+66 f1.txt
+student@T11:~/ajce$ wc -m f1.txt
+66 f1.txt
+student@T11:~/ajce$ man wc
+student@T11:~/ajce$ cat > f2.txt
+1
+2
+3
+4
+
+
+5
+6
+asha
+mary sibi^C
+student@T11:~/ajce$ cat f2.txt
+1
+2
+3
+4
+
+
+5
+6
+asha
+student@T11:~/ajce$ wc -l f2.txt
+9 f2.txt
+student@T11:~/ajce$ wc -m f2.txt
+19 f2.txt
+student@T11:~/ajce$ wc -c f2.txt
+19 f2.txt
+student@T11:~/ajce$ wc -L f1.txt
+28 f1.txt
+student@T11:~/ajce$ wc -W f1.txt
+wc: invalid option -- 'W'
+Try 'wc --help' for more information.
+student@T11:~/ajce$ man wc
+student@T11:~/ajce$ wc -w f1.txt
+14 f1.txt
+student@T11:~/ajce$ wc -w f2.txt
+7 f2.txt
+student@T11:~/ajce$ man wc
+student@T11:~/ajce$ cut -c4 f1.txt
+l
+ 
+e
+student@T11:~/ajce$ man cut
+student@T11:~/ajce$ cut -c 4,5,6 f1.txt
+loo
+ ar
+e s
+student@T11:~/ajce$ cut -b 1,2,3 f1.txt
+hel
+you
+bye
+student@T11:~/ajce$ cut -b 2,4,5 f1.txt
+elo
+o a
+ye 
+student@T11:~/ajce$ cut -f 1 f1.txt
+helloo world .i am here
+you are welcome to the world
+byee see you
+student@T11:~/ajce$ cut -f 3 f1.txt
+helloo world .i am here
+you are welcome to the world
+byee see you
+student@T11:~/ajce$ cut -b 1,2,3 f1.txt
+hel
+you
+bye
+student@T11:~/ajce$ cut -c 1,2,3 f1.txt
+hel
+you
+bye
+student@T11:~/ajce$ cut -f 3 f1.txt
+helloo world .i am here
+are 
+you
+student@T11:~/ajce$ cut -f 4 f1.txt
+i am here
+welcome 
+
+student@T11:~/ajce$ cut -f 2 f1.txt
+world 
+you 
+see 
+student@T11:~/ajce$ cut -f 2 f1.txt
+world 
+you 
+see 
+student@T11:~/ajce$ cut -f 4 f1.txt
+i am here
+are 
+
+student@T11:~/ajce$ cut -d, -f 4 f1.txt
+
+
+byee 	see 	you
+student@T11:~/ajce$ cut -d -f 4 f1.txt
+cut: the delimiter must be a single character
+Try 'cut --help' for more information.
+student@T11:~/ajce$ cut -d  f1.txt
+cut: the delimiter must be a single character
+Try 'cut --help' for more information.
+student@T11:~/ajce$ cut -d"" -f 3 f1.txt
+cut: the delimiter must be a single character
+Try 'cut --help' for more information.
+student@T11:~/ajce$ cut -d "" -f 3 f1.txt
+helloo 	world 	,	i am here
+	you 	,	are 	welcome 	to the world
+byee 	"see" 	you
+student@T11:~/ajce$ cut -d "" -f 3 f1.txt
+helloo 	world 	,	i am here
+	you 	,	are 	welcome 	to the world
+byee 	"	see	" 	you
+student@T11:~/ajce$ cut -d, -f 1 f1.txt
+helloo 	world 
+how
+student@T11:~/ajce$ cut -d, -f 1 f1.txt
+	helloo 	world 
+how
+student@T11:~/ajce$ cut -d "" -f 1 f1.txt
+	helloo 	" world "
+how, are ,you
+student@T11:~/ajce$ cut -d + -f 1 f1.txt
+a
+	hellooo
+student@T11:~/ajce$ 
+

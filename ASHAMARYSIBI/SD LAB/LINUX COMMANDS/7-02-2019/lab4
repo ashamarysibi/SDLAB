@@ -1,0 +1,84 @@
+student@S20:~$ mkdir mca
+student@S20:~$ mkdir ajce
+student@S20:~$ cd mca
+student@S20:~/mca$ ls out.txt
+ls: cannot access 'out.txt': No such file or directory
+student@S20:~/mca$ mkdir out
+student@S20:~/mca$ man cat
+student@S20:~/mca$ man cat
+student@S20:~/mca$ cat > file1.txt
+asha marys sibi
+ramapuratu
+vazhavara
+^C     
+student@S20:~/mca$ cat file1.txt
+asha marys sibi
+ramapuratu
+vazhavara
+student@S20:~/mca$ cat > file2.txt
+annu 
+shaji
+vazhavara
+^C
+student@S20:~/mca$ cat > file3.txt
+1
+
+
+
+2
+
+
+
+3^C
+student@S20:~/mca$ cat -b  file3.txt
+     1	1
+
+
+
+     2	2
+
+
+
+student@S20:~/mca$ cat -n file1.txt
+     1	asha marys sibi
+     2	ramapuratu
+     3	vazhavara
+student@S20:~/mca$ cat -E file1.txt
+asha marys sibi$
+ramapuratu$
+vazhavara$
+student@S20:~/mca$ man cat
+student@S20:~/mca$ man cat
+student@S20:~/mca$ cat -T file1.txt
+asha marys sibi
+ramapuratu
+vazhavara
+student@S20:~/mca$ cat -T file2.txt
+annu 
+shaji
+vazhavara
+student@S20:~/mca$ man cat
+student@S20:~/mca$ man mv
+student@S20:~/mca$ mv file1.txt file2.txt
+student@S20:~/mca$ mv file2.txt mca
+student@S20:~/mca$ mv -i file2.txt file1.txt
+mv: cannot stat 'file2.txt': No such file or directory
+student@S20:~/mca$ mv -i file3.txt file1.txt
+student@S20:~/mca$ mv -b file3.txt mca
+mv: cannot stat 'file3.txt': No such file or directory
+student@S20:~/mca$ mkdir ajce
+student@S20:~/mca$ mv -b  mca ajce
+student@S20:~/mca$ ls
+ajce  file1.txt  out
+student@S20:~/mca$ cat > file5.txt
+athira
+mani
+^C
+student@S20:~/mca$ mv -b  file3.txt file5.txt
+mv: cannot stat 'file3.txt': No such file or directory
+student@S20:~/mca$ mv -b  file1.txt file5.txt
+student@S20:~/mca$ ls
+ajce  file5.txt  file5.txt~  out
+student@S20:~/mca$  ^C
+student@S20:~/mca$ 
+

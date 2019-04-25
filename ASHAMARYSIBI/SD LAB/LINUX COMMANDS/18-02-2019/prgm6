@@ -1,0 +1,167 @@
+student@T11:~$ cd ajce
+student@T11:~/ajce$ man paste
+student@T11:~/ajce$ paste file2.txt file4.txt
+paste: file2.txt: No such file or directory
+student@T11:~/ajce$ paste f2.txt file4.txt
+1	dddddddddddddddh
+2	defffggggghhhhhhh	
+3			sdxfcgvbhnjmjkfcgvhb
+4	ddccdfc
+	
+	
+5	
+6	
+asha	
+student@T11:~/ajce$ paste -d "|" file4.txt
+dddddddddddddddh
+defffggggghhhhhhh	
+		sdxfcgvbhnjmjkfcgvhb
+ddccdfc
+student@T11:~/ajce$ paste -d "|" file4.txt
+ddddddddd ddddddh
+defffggg gghhhhhhh	
+		sdxfcgvbhn jmjkfcgvhb
+ddcc dfc
+student@T11:~/ajce$ cat > ff1.txt
+asha
+m,ary
+sibi
+aparna
+albin
+kukku
+amal 
+rani
+^C
+student@T11:~/ajce$ cat > ff3.txt
+12
+23
+34
+56
+78
+98
+78
+^C
+student@T11:~/ajce$ cat > ff2.txt
+idukki
+kollam
+wayanad
+vazhavara
+bathery
+nirmala
+cheruthoni
+vellayamkudi
+^C
+student@T11:~/ajce$ cat ff1.txt
+asha
+mary
+sibi
+aparna
+albin
+kukku
+amal
+rani
+student@T11:~/ajce$ paste ff1.txt ff2.txt ff3.txt
+asha	idukki	12
+mary	kollam	23
+sibi	wayanad	34
+aparna	vazhavara	56
+albin	bathery	78
+kukku	nirmala	98
+amal	cheruthoni	78
+rani	vellayamkudi	
+student@T11:~/ajce$ paste ff1.txt ff2.txt ff3.txt
+asha	idukki	12
+mary	kollam	23
+sibi	wayanad	34
+aparna	vazhavara	56
+albin	bathery	78
+kukku	nirmala	98
+amal	cheruthoni	78
+rani		
+student@T11:~/ajce$ paste-d "|"  ff1.txt ff2.txt ff3.txt
+paste-d: command not found
+student@T11:~/ajce$ paste -d "|"  ff1.txt ff2.txt ff3.txt
+asha|idukki|12
+mary|kollam|23
+sibi|wayanad|34
+aparna|vazhavara|56
+albin|bathery|78
+kukku|nirmala|98
+amal|cheruthoni|78
+rani||
+student@T11:~/ajce$ paste -d ":"  ff1.txt ff2.txt ff3.txt
+asha:idukki:12
+mary:kollam:23
+sibi:wayanad:34
+aparna:vazhavara:56
+albin:bathery:78
+kukku:nirmala:98
+amal:cheruthoni:78
+rani::
+student@T11:~/ajce$ paste -s  ff1.txt ff2.txt ff3.txt
+asha	mary	sibi	aparna	albin	kukku	amal	rani
+idukki	kollam	wayanad	vazhavara	bathery	nirmala	cheruthoni	
+12	23	34	56	78	98	78
+student@T11:~/ajce$ paste-- <ff1.txt
+paste--: command not found
+student@T11:~/ajce$ paste-- < ff1.txt
+paste--: command not found
+student@T11:~/ajce$ paste -- < ff1.txt
+asha
+mary
+sibi
+aparna
+albin
+kukku
+amal
+rani
+student@T11:~/ajce$ paste --- < ff1.txt
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T11:~/ajce$ paste -s -d ":"  ff1.txt ff2.txt ff3.txt
+asha:mary:sibi:aparna:albin:kukku:amal:rani
+idukki:kollam:wayanad:vazhavara:bathery:nirmala:cheruthoni:
+12:23:34:56:78:98:78
+student@T11:~/ajce$ paste - - < ff1.txt
+asha	mary
+sibi	aparna
+albin	kukku
+amal	rani
+student@T11:~/ajce$ paste -d "|:"  ff1.txt ff2.txt ff3.txt
+asha|idukki:12
+mary|kollam:23
+sibi|wayanad:34
+aparna|vazhavara:56
+albin|bathery:78
+kukku|nirmala:98
+amal|cheruthoni:78
+rani|:
+student@T11:~/ajce$ paste -d "|:"  ff1.txt ff2.txt 
+asha|idukki
+mary|kollam
+sibi|wayanad
+aparna|vazhavara
+albin|bathery
+kukku|nirmala
+amal|cheruthoni
+rani|
+student@T11:~/ajce$ man paste
+student@T11:~/ajce$ paste -b
+paste: invalid option -- 'b'
+Try 'paste --help' for more information.
+student@T11:~/ajce$ paste - - v
+paste: v: No such file or directory
+student@T11:~/ajce$ paste - - v f1.txt
+paste: v: No such file or directory
+student@T11:~/ajce$ paste - - v ff1.txt
+paste: v: No such file or directory
+student@T11:~/ajce$ paste --v ff1.txt
+paste (GNU coreutils) 8.28
+Copyright (C) 2017 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by David M. Ihnat and David MacKenzie.
+student@T11:~/ajce$ 
+

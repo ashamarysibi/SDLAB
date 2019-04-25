@@ -1,0 +1,62 @@
+student@T12:~$ echo asha
+asha
+student@T12:~$ read a
+6
+student@T12:~$ echo a
+a
+student@T12:~$ echo $a
+6
+student@T12:~$ man ls
+student@T12:~$ man echo
+student@T12:~$ man read
+student@T12:~$ echo -e \bthe \bworld
+bthe bworld
+student@T12:~$ echo -e " \bthe \bworld"
+theworld
+student@T12:~$ echo -e "\nhello\nworld"
+
+hello
+world
+student@T12:~$ ^C
+student@T12:~$ echo -e "\vhello\vworld"
+
+hello
+     world
+student@T12:~$ echo -e "\thello\tworld"
+	hello	world
+student@T12:~$ READ S
+READ: command not found
+student@T12:~$ read s
+haii 
+student@T12:~$ echo "$s asha"
+haii asha
+student@T12:~$ echo -e "\rhello\rworld"
+world
+student@T12:~$ echo -e "\rhelloworld"
+helloworld
+student@T12:~$ read -p "enter your name"
+enter your nameasha
+student@T12:~$ man echo
+student@T12:~$ man read
+student@T12:~$ read "enter your name"
+bash: read: `enter your name': not a valid identifier
+student@T12:~$ read -n "enter 5 characters"
+bash: read: enter 5 characters: invalid number
+student@T12:~$ read -n 5 -p "enter 5 characters"
+enter 5 characters12345student@T12:~$ read -s -p "enter password" password
+enter passwordstudent@T12:~$ echo $password
+1234
+student@T12:~$ man man
+student@T12:~$ 
+
+
+
+
+
+
+
+
+
+
+
+

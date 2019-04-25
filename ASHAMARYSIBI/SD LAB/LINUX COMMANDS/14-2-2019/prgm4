@@ -1,0 +1,77 @@
+student@T11:~$ man cp
+student@T11:~$ cd ajce
+student@T11:~/ajce$ cp ajce /home/popo
+cp: cannot stat 'ajce': No such file or directory
+student@T11:~/ajce$ cp anto /home/popo
+cp: -r not specified; omitting directory 'anto'
+student@T11:~/ajce$ cp -R anto /home/popo
+cp: cannot create directory '/home/popo': Permission denied
+student@T11:~/ajce$ cp src /home/lateral
+cp: cannot stat 'src': No such file or directory
+student@T11:~/ajce$ cp anto /home/student/lateral
+cp: -r not specified; omitting directory 'anto'
+student@T11:~/ajce$ cp file1.txt /home/student/lateral
+student@T11:~/ajce$ cat lateral
+cat: lateral: Is a directory
+student@T11:~/ajce$ ls lateral
+file1.txt  in.txt
+student@T11:~/ajce$ ls
+anto  examples.desktop  file1.txt  in.txt  lateral  timetable.html
+student@T11:~/ajce$ cp mca  /home/student/lateral
+cp: cannot stat 'mca': No such file or directory
+student@T11:~/ajce$ mv file1.txt file3.txt
+student@T11:~/ajce$ cat file3.txt
+defffggggghhhhhhh
+ddccdfc
+student@T11:~/ajce$ cat file3.txt  file4.txt
+defffggggghhhhhhh
+ddccdfc
+dsczv xfc
+student@T11:~/ajce$ cat file3.txt > file4.txt
+student@T11:~/ajce$ cat file4.txt
+defffggggghhhhhhh
+ddccdfc
+student@T11:~/ajce$ cat file3.txt >> file4.txt
+student@T11:~/ajce$ cat file4.txt
+dddddddddddddddh
+defffggggghhhhhhh
+ddccdfc
+student@T11:~/ajce$ cp -r anto /home/student/lateral
+student@T11:~/ajce$ ls
+anto  examples.desktop  file3.txt  file4.txt  in.txt  lateral  timetable.html
+student@T11:~/ajce$ cp -r anto /home/student/mca
+student@T11:~/ajce$ ls
+anto  examples.desktop  file3.txt  file4.txt  in.txt  lateral  timetable.html
+student@T11:~/ajce$ ls
+anto  examples.desktop  file3.txt  file4.txt  in.txt  lateral  timetable.html
+student@T11:~/ajce$ rm file3.txt
+student@T11:~/ajce$ ls
+anto  examples.desktop  file4.txt  in.txt  lateral  timetable.html
+student@T11:~/ajce$ rm -R anto
+student@T11:~/ajce$ ls
+examples.desktop  file4.txt  in.txt  lateral  timetable.html
+student@T11:~/ajce$ maqn rm
+
+Command 'maqn' not found, did you mean:
+
+  command 'man' from deb man-db
+  command 'maq' from deb maq
+
+Try: apt install <deb name>
+
+student@T11:~/ajce$ man rm
+student@T11:~/ajce$ cat -T file4.txt
+dddddddddddddddh
+defffggggghhhhhhh
+ddccdfc
+student@T11:~/ajce$ cat -b file4.txt
+     1	dddddddddddddddh
+     2	defffggggghhhhhhh
+     3	ddccdfc
+student@T11:~/ajce$ cat -T file4.txt
+dddddddddddddddh
+defffggggghhhhhhh^I
+^I^Isdxfcgvbhnjmjkfcgvhb
+ddccdfc
+student@T11:~/ajce$ 
+

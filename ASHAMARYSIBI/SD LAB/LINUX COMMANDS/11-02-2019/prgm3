@@ -1,0 +1,155 @@
+student@T11:~$ man cp
+student@T11:~$ mkdir mca
+student@T11:~$ mkdir ajce
+student@T11:~$ cd mca
+student@T11:~/mca$ mkdir out.txt
+student@T11:~/mca$ cd ajce
+bash: cd: ajce: No such file or directory
+student@T11:~/mca$ cd /
+student@T11:/$ cd ajce
+bash: cd: ajce: No such file or directory
+student@T11:/$ cd ..
+student@T11:/$ cd ~
+student@T11:~$ cd ajce
+student@T11:~/ajce$ mkdir in.txt
+student@T11:~/ajce$ cat file1.txt
+cat: file1.txt: No such file or directory
+student@T11:~/ajce$ cat > file1.txt
+hello world 
+welcome to the world
+^C
+student@T11:~/ajce$ cd~
+
+Command 'cd~' not found, did you mean:
+
+  command 'cdo' from deb cdo
+  command 'cdi' from deb cdo
+  command 'cdw' from deb cdw
+  command 'cd5' from deb cd5
+  command 'cdp' from deb irpas
+  command 'cdb' from deb tinycdb
+  command 'cde' from deb cde
+  command 'cdv' from deb codeville
+
+Try: apt install <deb name>
+
+student@T11:~/ajce$ cd ~
+student@T11:~$ cd mca
+student@T11:~/mca$ cat > file2.txt
+how are you 
+i'm file2
+^C
+student@T11:~/mca$ cd ~
+student@T11:~$ ls
+ajce     Documents  examples.desktop  Music     Public     timetable.html
+Desktop  Downloads  mca               Pictures  Templates  Videos
+student@T11:~$ cd mca
+student@T11:~/mca$ ls
+file2.txt  out.txt
+student@T11:~/mca$ cd ~
+student@T11:~$ man cp
+student@T11:~$ cd mca
+student@T11:~/mca$ file1.txt out.txt
+file1.txt: command not found
+student@T11:~/mca$ file2.txt out.txt
+file2.txt: command not found
+student@T11:~/mca$ file2  out
+
+Command 'file2' not found, but can be installed with:
+
+apt install file-kanji
+Please ask your administrator.
+
+student@T11:~/mca$ cat > file3.txt
+welcome to my world
+^C
+student@T11:~/mca$ cp file3 file2
+cp: cannot stat 'file3': No such file or directory
+student@T11:~/mca$ cp file3.txt  file2.txt
+student@T11:~/mca$ man cp
+student@T11:~/mca$ cat > file4.txt
+hellloooooo!!!!!
+^C
+student@T11:~/mca$ cp -a file3.txt file4.txt
+student@T11:~/mca$ man cp
+student@T11:~/mca$ cp -i file2.txt file3.txt
+cp: overwrite 'file3.txt'? y
+student@T11:~/mca$ cp -i file2.txt file3.txt
+cp: overwrite 'file3.txt'? y
+student@T11:~/mca$ 
+student@T11:~/mca$ man cp
+student@T11:~/mca$ cp -R mca ajce
+cp: cannot stat 'mca': No such file or directory
+student@T11:~/mca$ cp -b file2 file3
+cp: cannot stat 'file2': No such file or directory
+student@T11:~/mca$ cp -b file2.txt file3.txt
+student@T11:~/mca$ ls file3.txt
+file3.txt
+student@T11:~/mca$ man cp
+student@T11:~/mca$ cp -R out.txt in.txt
+student@T11:~/mca$ cd ajce
+bash: cd: ajce: No such file or directory
+student@T11:~/mca$ cd ~
+student@T11:~$ cd ajce
+student@T11:~/ajce$ mkdir lateral
+student@T11:~/ajce$ cd ~
+student@T11:~$ cp -R mca lateral
+student@T11:~$ ls -a
+.             .cache     examples.desktop  mca       Public
+..            .config    .gnupg            .mozilla  .ssh
+ajce          Desktop    .ICEauthority     Music     Templates
+.bash_logout  Documents  lateral           Pictures  timetable.html
+.bashrc       Downloads  .local            .profile  Videos
+student@T11:~$ cd ajce
+student@T11:~/ajce$ cp -n file1.txt lateral
+student@T11:~/ajce$ cd ~
+student@T11:~$ cd mca
+student@T11:~/mca$ cp file2.txt file3.txt file4.txt in.txt
+student@T11:~/mca$ mkdir dir1
+student@T11:~/mca$ cp file2.txt file3.txt file4.txt dir1
+student@T11:~/mca$ cp -R dir1 out.txt
+student@T11:~/mca$ cp --backup =simple file2.txt file3.txt
+cp: target 'file3.txt' is not a directory
+student@T11:~/mca$ cp --attributes-only file3.txt file2.txt
+student@T11:~/mca$ ls -l *.txt
+-rw-r--r-- 1 student student    0 Feb 11 17:28 file2.txt
+-rw-r--r-- 1 student student   46 Feb 11 17:09 file3.txt
+-rw-r--r-- 1 student student   20 Feb 11 16:54 file4.txt
+
+in.txt:
+total 12
+-rw-r--r-- 1 student student 46 Feb 11 17:19 file2.txt
+-rw-r--r-- 1 student student 46 Feb 11 17:19 file3.txt
+-rw-r--r-- 1 student student 20 Feb 11 17:19 file4.txt
+
+out.txt:
+total 4
+drwxr-xr-x 2 student student 4096 Feb 11 17:24 dir1
+student@T11:~/mca$ cp --attributes-only file3.txt file2.txt
+student@T11:~/mca$ cp --attributes-only file3.txt file2.txt
+student@T11:~/mca$ cp -r dir1 in out
+student@T11:~/mca$ cp -R dir1 out in 
+student@T11:~/mca$ man cp
+student@T11:~/mca$ cp -v file2.txt in
+'file2.txt' -> 'in/file2.txt'
+student@T11:~/mca$ man cp
+student@T11:~/mca$ cp * ajce
+cp: target 'ajce' is not a directory
+student@T11:~/mca$ cd ~
+student@T11:~$ cp * ajce
+cp: -r not specified; omitting directory 'ajce'
+cp: -r not specified; omitting directory 'Desktop'
+cp: -r not specified; omitting directory 'Documents'
+cp: -r not specified; omitting directory 'Downloads'
+cp: -r not specified; omitting directory 'lateral'
+cp: -r not specified; omitting directory 'mca'
+cp: -r not specified; omitting directory 'Music'
+cp: -r not specified; omitting directory 'Pictures'
+cp: -r not specified; omitting directory 'Public'
+cp: -r not specified; omitting directory 'Templates'
+cp: -r not specified; omitting directory 'Videos'
+student@T11:~$ cd ajce
+student@T11:~/ajce$ cp * ajce
+cp: target 'ajce' is not a directory
+student@T11:~/ajce$ 
+

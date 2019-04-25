@@ -1,0 +1,89 @@
+student@T11:~$ cd ajce
+student@T11:~/ajce$ grep hardware f1.txt
+Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+student@T11:~/ajce$ grep "hardware" f1.txt
+Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+student@T11:~/ajce$ grep "hardware" f1.txt f2.txt
+f1.txt:Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+student@T11:~/ajce$ grep "Linux" f1.txt f2.txt
+f1.txt:Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+f1.txt:For the purposes of this page, we use the term “Linux” to refer to the Linux kernel, but also the set of programs, tools, and services that are typically bundled together with the Linux kernel to provide all of the necessary components of a fully functional operating system. Some people, particularly members of the Free Software Foundation, refer to this collection as GNU/Linux, because many of the tools included are GNU components. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a Linux kernel but relies very little on GNU tools.
+f1.txt:How does Linux differ from other operating systems?
+f2.txt:people, particularly members of the Free Software Foundation, refer to this collection as GNU/Linux, because many of the tools included are GNU components. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a Linux kernel but relies very little on GNU tools.
+f2.txt:How does Linux differ from other operating systems?
+student@T11:~/ajce$ grep -i "LINUX" f1.txt f2.txt
+f1.txt:Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+f1.txt:For the purposes of this page, we use the term “LINUX” to refer to the Linux kernel, but also the set of programs, tools, and services that are typically bundled together with the Linux kernel to provide all of the necessary components of a fully functional operating system. Some people, particularly members of the Free Software Foundation, refer to this collection as GNU/Linux, because many of the tools included are GNU components. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a Linux kernel but relies very little on GNU tools.
+f1.txt:How does Linux differ from other operating systems?
+f2.txt:people, particularly members of the Free Software Foundation, refer to this collection as GNU/Linux, because many of the tools included are GNU components. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a Linux kernel but relies very little on GNU tools.
+f2.txt:How does Linux differ from other operating systems?
+student@T11:~/ajce$ grep -c "LINUX" f1.txt 
+1
+student@T11:~/ajce$ grep -c "Linux" f1.txt 
+3
+student@T11:~/ajce$ grep -l "Linux"
+
+^C  
+student@T11:~/ajce$ grep -l "Linux" *
+f1.txt
+f2.txt
+grep: hello: Is a directory
+grep: in.txt: Is a directory
+grep: lateral: Is a directory
+student@T11:~/ajce$ grep -w "Linux" f1.txt 
+Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+For the purposes of this page, we use the term “LINUX” to refer to the Linux kernel, but also the set of programs, tools, and services that are typically bundled together with the Linux kernel to provide all of the necessary components of a fully functional operating system. Some people, particularly members of the Free Software Foundation, refer to this collection as GNU/Linux, because many of the tools included are GNU components. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a Linux kernel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+student@T11:~/ajce$ grep "Linux" f1.txt 
+Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+For the purposes of this page, we use the term “LINUX” to refer to the Linux kernel, but also the set of programs, tools, and services that are typically bundled together with the Linux kernel to provide all of the necessary components of a fully functional operating system. Some people, particularly members of the Free Software Foundation, refer to this collection as GNU/Linux, because many of the tools included are GNU components. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a Linux kernel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+student@T11:~/ajce$ grep -v "Linux" f1.txt 
+
+
+student@T11:~/ajce$ grep -v "Linux" f1.txt 
+
+
+student@T11:~/ajce$ grep -v "Linux" f1.txt 
+
+
+student@T11:~/ajce$ grep -V "Linux" f1.txt 
+grep (GNU grep) 3.1
+Copyright (C) 2017 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Mike Haertel and others, see <http://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>.
+student@T11:~/ajce$ grep -v "Linux" f1.txt 
+
+dfrfuygjdufihgbnbjigv lkjnmkjnmbgfihnilkcmbhji ujhnfujgkvnbukjvbfctuifhng jhnknujnhoiulkjni.
+
+student@T11:~/ajce$ grep -B3 linux f1.txt
+student@T11:~/ajce$ grep -B2 "linux" f1.txt
+student@T11:~/ajce$ grep -B2 "software" f1.txt
+is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+student@T11:~/ajce$ grep -A3 "software" f1.txt
+is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+
+For the purposes of this page, we use the term “LINUX” to refer to the Linux kernel, but also the set of programs, tools, and services that are typically bundled together with the Linux kernel to provide all of the necessary components of a fully functional operating system. Some people, particularly members of the Free Software Foundation, refer to this collection as, because many of the tools included are GNU components. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a Linux kernel but relies very little on GNU tools.
+How does Linux differ from other operating systems?
+student@T11:~/ajce$ grep "^for" f1.txt
+student@T11:~/ajce$ grep "^For" f1.txt
+For the purposes of this page, we use the term “LINUX” to refer to the Linux kernel, but also the set of programs, tools, and services that are typically bundled together with the Linux kernel to provide all of the necessary components of a fully functional operating system. Some people, particularly members of the Free Software Foundation, refer to this collection as, because many of the tools included are GNU components. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a Linux kernel but relies very little on GNU tools.
+student@T11:~/ajce$ grep "^tools$" f1.txt
+student@T11:~/ajce$ grep "tools$" f1.txt
+student@T11:~/ajce$ grep "systems$" f1.txt
+student@T11:~/ajce$ grep -c "linux" f1.txt
+0
+student@T11:~/ajce$ grep -c "linux" f1.txt
+1
+student@T11:~/ajce$ grep "tools$" f1.txt
+student@T11:~/ajce$ grep "systems$" f1.txt
+How does Linux differ from other operating systems
+student@T11:~/ajce$ grep "tools$" f1.txt
+Some people, particularly members of the Free Software Foundation, refer to this collection as, because many of the tools included are GNU components. However, not all Linux installations use GNU components as a part of their operating system. Android, for example, uses a Linux kernel but relies very little on GNU tools
+student@T11:~/ajce$ egrep "linux|software " f1.txt f2.txt
+f1.txt:is the best-known and most-used open source operating system.linux  As an operating system, Linux is software that sits underneath all of the other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.
+student@T11:~/ajce$ grep 
+

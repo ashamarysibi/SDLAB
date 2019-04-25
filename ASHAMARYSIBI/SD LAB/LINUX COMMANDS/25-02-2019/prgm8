@@ -1,0 +1,323 @@
+student@T11:~$ cd ajce
+student@T11:~/ajce$ cat > head.txt
+helloo
+how
+are 
+you
+which
+how
+who
+when
+why
+what
+whose
+whom
+where
+^C
+student@T11:~/ajce$ head head.txt
+helloo
+how
+are 
+you
+which
+how
+who
+when
+why
+what
+student@T11:~/ajce$ head -n 5 head.txt
+helloo
+how
+are 
+you
+which
+student@T11:~/ajce$ head -c 5 head.txt
+hellostudent@T11:~/ajce$ head -c 3 head.txt
+helstudent@T11:~/ajce$ cat > state.txt
+kerala
+tamil nadu
+andhra
+karnataka
+orissa
+jammu
+goa
+rajasthan
+punjab
+madhya pradesh
+tripura
+uttaranchal
+^C
+student@T11:~/ajce$ head -q head.txt state.txt
+helloo
+how
+are 
+you
+which
+how
+who
+when
+why
+what
+kerala
+tamil nadu
+andhra
+karnataka
+orissa
+jammu
+goa
+rajasthan
+punjab
+madhya pradesh
+student@T11:~/ajce$ head -v state.txt
+==> state.txt <==
+kerala
+tamil nadu
+andhra
+karnataka
+orissa
+jammu
+goa
+rajasthan
+punjab
+madhya pradesh
+student@T11:~/ajce$ head -n 5 state.txt | tail -10
+kerala
+tamil nadu
+andhra
+karnataka
+orissa
+student@T11:~/ajce$ head -n 5 state.txt | tail -1
+orissa
+student@T11:~/ajce$ man head
+student@T11:~/ajce$ head -n 5 head.txt | tail -2
+you
+which
+student@T11:~/ajce$ tail head.txt
+you
+which
+how
+who
+when
+why
+what
+whose
+whom
+where
+student@T11:~/ajce$ tail -n 3 head.txt
+whose
+whom
+where
+student@T11:~/ajce$ tail +3 head.txt
+are 
+you
+which
+how
+who
+when
+why
+what
+whose
+whom
+where
+student@T11:~/ajce$ tail +10 head.txt
+what
+whose
+whom
+where
+student@T11:~/ajce$ tail -c -6 head.txt
+where
+student@T11:~/ajce$ tail -c 6 head.txt
+where
+student@T11:~/ajce$ tail -c 3 head.txt
+re
+student@T11:~/ajce$ tail -c -3 head.txt
+re
+student@T11:~/ajce$ tail -c -2 head.txt
+e
+student@T11:~/ajce$ tail -c -4 head.txt
+ere
+student@T11:~/ajce$ tail -c +4 head.txt
+loo
+how
+are 
+you
+which
+how
+who
+when
+why
+what
+whose
+whom
+where
+student@T11:~/ajce$ tail -c +26 head.txt
+
+how
+who
+when
+why
+what
+whose
+whom
+where
+student@T11:~/ajce$ tail -c +6 head.txt
+o
+how
+are 
+you
+which
+how
+who
+when
+why
+what
+whose
+whom
+where
+student@T11:~/ajce$ tail -c +2 head.txt
+elloo
+how
+are 
+you
+which
+how
+who
+when
+why
+what
+whose
+whom
+where
+student@T11:~/ajce$ tail -c +3 head.txt
+lloo
+how
+are 
+you
+which
+how
+who
+when
+why
+what
+whose
+whom
+where
+student@T11:~/ajce$ tail -c +3 state.txt
+rala
+tamil nadu
+andhra
+karnataka
+orissa
+jammu
+goa
+rajasthan
+punjab
+madhya pradesh
+tripura
+uttaranchal
+student@T11:~/ajce$ tail -c +5 state.txt
+la
+tamil nadu
+andhra
+karnataka
+orissa
+jammu
+goa
+rajasthan
+punjab
+madhya pradesh
+tripura
+uttaranchal
+student@T11:~/ajce$ tail -c -5 state.txt
+chal
+student@T11:~/ajce$ tail -c -2 state.txt
+l
+student@T11:~/ajce$ tail head.txt state.txt
+==> head.txt <==
+you
+which
+how
+who
+when
+why
+what
+whose
+whom
+where
+
+==> state.txt <==
+andhra
+karnataka
+orissa
+jammu
+goa
+rajasthan
+punjab
+madhya pradesh
+tripura
+uttaranchal
+student@T11:~/ajce$ tail -q head.txt state.txt
+you
+which
+how
+who
+when
+why
+what
+whose
+whom
+where
+andhra
+karnataka
+orissa
+jammu
+goa
+rajasthan
+punjab
+madhya pradesh
+tripura
+uttaranchal
+student@T11:~/ajce$ tail -f head.txt
+you
+which
+how
+who
+when
+why
+what
+whose
+whom
+where
+            
+^C
+student@T11:~/ajce$ tail -v state.txt
+==> state.txt <==
+andhra
+karnataka
+orissa
+jammu
+goa
+rajasthan
+punjab
+madhya pradesh
+tripura
+uttaranchal
+student@T11:~/ajce$ tail --version
+tail (GNU coreutils) 8.28
+Copyright (C) 2017 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Paul Rubin, David MacKenzie, Ian Lance Taylor,
+and Jim Meyering.
+student@T11:~/ajce$ tail -7 head.txt | sort -r
+why
+whose
+whom
+who
+where
+when
+what
+student@T11:~/ajce$ 
+

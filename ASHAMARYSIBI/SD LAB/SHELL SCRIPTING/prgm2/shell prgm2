@@ -1,0 +1,68 @@
+student@T11:~$ gedit else.txt
+student@T11:~$ gedit else.sh
+student@T11:~$ chmod +x else.sh
+student@T11:~$ ./else.sh
+enter a number:6
+positive
+student@T11:~$ ./else.sh
+enter a number:0
+Zero
+student@T11:~$ ./else.sh
+enter a number:-3
+negative
+student@T11:~$ chmod +x prgmelse.sh
+student@T11:~$ ./prgmelse.sh
+enter a number:8
+positive
+student@T11:~$ ./prgmelse.sh
+enter a number:0
+Zero
+student@T11:~$ ./prgmelse.sh
+enter a number:-9
+negative
+student@T11:~$ gedit monday.sh
+student@T11:~$ chmod +x monday.sh
+student@T11:~$ ./monday.sh monday
+typed argument is monday
+student@T11:~$ ./monday.sh wednesday
+Typed argument is neither monday nor tuesday
+student@T11:~$ gedit prgmloop.sh
+student@T11:~$ chmod +x prgmloop.sh
+student@T11:~$ ./prgmloop.sh
+3 times 5 is 15
+2 times 5 is 10
+5 times 5 is 25
+7 times 5 is 35
+student@T11:~$ gedit prgmfor.sh
+student@T11:~$ chmod +x prgmfor.sh
+student@T11:~$ ./prgmfor.sh
+welcome 1 times
+welcome 2 times
+welcome 3 times
+welcome 4 times
+welcome 5 times
+student@T11:~$ gedit prgmrange.sh
+student@T11:~$ chmod +x prgmrange.sh
+student@T11:~$ ./prgmrange.sh
+welcome 0 times
+welcome 2 times
+welcome 4 times
+welcome 6 times
+welcome 8 times
+welcome 10 times
+student@T11:~$ gedit prgms.sh
+student@T11:~$ chmod +x prgms.sh
+student@T11:~$ ./prgms.sh
+welcome 1 times
+welcome 2 times
+welcome 3 times
+welcome 4 times
+welcome 5 times
+student@T11:~$ pinfinite.sh
+pinfinite.sh: command not found
+student@T11:~$ gedit pinfinite.sh
+student@T11:~$ chmod +x pinfinte.sh
+chmod: cannot access 'pinfinte.sh': No such file or directory
+student@T11:~$ chmod +x pinfinite.sh
+student@T11:~$ 
+

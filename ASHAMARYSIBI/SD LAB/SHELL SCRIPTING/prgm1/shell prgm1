@@ -1,0 +1,66 @@
+student@T11:~$ vi samplefile.sh
+student@T11:~$ chmod u+x samplefile.sh
+student@T11:~$ ./samplefile.sh
+hello
+student@T11:~$ gedit sample.sh
+student@T11:~$ chmod +x sample.sh
+student@T11:~$ ./sample.sh
+haiiii
+student@T11:~$ gedit prgm1.sh
+student@T11:~$ chmod +x prgm1.sh
+student@T11:~$ ./prgm1.sh
+Hello World!
+The date Today is Thu Mar 21 14:29:29 IST 2019
+The currrent directory is /home/student
+student@T11:~$ gedit prgm2.sh
+student@T11:~$ chmod +x prgm2.sh
+student@T11:~$ ./prgm2.sh
+value of var is test string
+student@T11:~$ gedit prgm3.sh
+student@T11:~$ chmod +x prgm3.sh
+student@T11:~$ ./prgm3.sh
+value of var is $var
+student@T11:~$ gedit argu.sh
+student@T11:~$ chmod +x argu.sh
+student@T11:~$ ./argu.sh
+The command is ./argu.sh
+The first argument is 
+The second argument si 
+The Third argument is 
+The fourth argument is 
+student@T11:~$ ./argu.sh 1 2 3 6
+The command is ./argu.sh
+The first argument is 1
+The second argument si 2
+The Third argument is 3
+The fourth argument is 6
+student@T11:~$ gedit argu.sh
+student@T11:~$ ./argu.sh hai hello e  c
+The command is ./argu.sh
+The first argument is 4
+The second argument si hai hello e c
+The Third argument is hai hello e c
+student@T11:~$ gedit file2.sh
+student@T11:~$ chmod +x file2.sh
+student@T11:~$ ./file2.sh
+
+
+student@T11:~$ gedit file2.sh
+student@T11:~$ ./file2.sh
+5 + 10=15
+student@T11:~$ gedit file2.sh
+student@T11:~$ gedit file3.sh
+student@T11:~$ chmod +x file3.sh
+student@T11:~$ ./file3.sh
+Enter two Numbers :4 5
+4 + 5=9
+student@T11:~$ gedit file3.sh
+student@T11:~$ ./file3.sh
+Enter two Numbers :2 6
+2 + 6=8
+student@T11:~$ gedit file3.sh
+student@T11:~$ ./file3.sh
+sum is 30
+student@T11:~$ ^C
+student@T11:~$ 
+
